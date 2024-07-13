@@ -1,0 +1,137 @@
+*{
+    /* * means including the body */
+    margin: 0;
+    padding: 0;
+}
+
+.navbar{
+    background-color: #333;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+
+}
+.navbar .logo{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgb(40, 255, 2);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    cursor: pointer;
+    font-weight: bolder;
+    
+}
+
+.navbar .logo:hover{
+    background-color: #475;
+    font-size: 23px;
+}
+
+/* nav links */
+.links{
+    display: flex;
+    gap: 32px;
+}
+
+.links li{
+    list-style-type: none;
+}
+.links li > a{
+    text-decoration: none;
+    color: wheat;
+} 
+.links li > a:hover{
+    border-bottom: 1px solid rgb(46, 247, 11);
+} 
+
+/* Search */
+.search{
+    background-color: black;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 10px;
+    width: 200px;
+    border-radius: 7px;
+}
+
+
+/* Hero section */
+.container{
+    width: 100vw;
+    background-color: rgb(40, 255, 2);
+    height: calc(100vh - 80px)
+}
+.text{
+    z-index: 1;
+    color: white;
+}
+.text p{
+    width: 50%;
+    margin: auto;
+    color: bisque;
+    margin-top: 2rem;
+}
+.text h1{
+    text-align: center;
+    font-size: 60px;
+}
+.btns{
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+.btn2{
+    background-color: white;
+    color: black;
+}
+.btn3{
+    background-color: yellow;
+    color: black;
+}
+
+button{
+    border: none;
+    padding: 12px;
+    border-radius: 12px;
+    width: 57px;
+    color: black;
+    background-color: rgb(5, 254, 5);
+}
+button:hover{
+    background-color: gray;
+    font-size: 10px;
+}
+
+.container .bgimage h1{
+    color: white;
+}
+.container .bgimage{
+     
+    background-image: url("../assets/Images/OIG2.jpeg");
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.container .bgimage::after{
+    content: "";
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.70);
+    top: 0; 
+    left: 0;
+    width: 100%;
+    height: 100%;
+}

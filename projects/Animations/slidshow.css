@@ -1,0 +1,38 @@
+*{
+    width: 0;
+    height: 0;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(71, 64, 64);
+    /* align-items: center; */
+}
+.box{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    background-color: blue;
+    /* color: red; */
+    /* Animation: name duuration timing-function delay iteration-count direction fill-move */
+    animation-name: move;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    transform: translateX(-150px);
+
+}
+ /* Apply the animation name*/
+@keyframes move{
+    from{
+        transform: translateX(-150px);
+    }to{
+
+        transform: translateX(100vh);
+    }
+}
+ 

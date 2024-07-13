@@ -1,0 +1,54 @@
+ body{
+    background-color: #222;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
+ }
+ .container{
+    width: 100vw;
+    height: 100vh;
+    border-color: black;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+
+ }
+ .box1, .box2, .box3, .box4{
+    width: 130px;
+    height: 130px;
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: turquoise;
+ }
+
+ /* Transform property */
+ .box1{
+    /* transform: rotate(90deg); */
+    transform: rotateZ(20deg);
+ }
+ .box2{
+    transform: skew(40deg);
+    transform: skew(50deg);
+ }
+ .box3{
+    background-color: pink;
+    /* position: relative; */
+ }
+ .box3::after{
+    content: "Royal";
+    width: 50px;
+    height: 50px;
+    background-color: yellow;
+    position: absolute;
+    color: black;
+    font-size: 12px;
+    right: 50;
+
+ }
+ /* Do research on scale and more on the transform property */
+ 
+
